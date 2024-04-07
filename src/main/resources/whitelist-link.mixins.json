@@ -3,7 +3,7 @@
 	"package": "co.greasygang.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"WhitelistMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
