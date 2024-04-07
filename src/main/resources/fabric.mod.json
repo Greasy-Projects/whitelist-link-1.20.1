@@ -3,9 +3,9 @@
 	"id": "whitelist-link",
 	"version": "${version}",
 	"name": "whitelist-link",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Connects the greasygang.co whitelist to your Minecraft server",
 	"authors": [
-		"Me!"
+		"veryCrunchy, dargy"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,18 +16,11 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"co.greasygang.Whitelistlink"
-		],
-		"client": [
-			"co.greasygang.WhitelistlinkClient"
+			"co.greasygang.WhitelistLink"
 		]
 	},
 	"mixins": [
-		"whitelist-link.mixins.json",
-		{
-			"config": "whitelist-link.client.mixins.json",
-			"environment": "client"
-		}
+		"whitelist-link.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.9",
