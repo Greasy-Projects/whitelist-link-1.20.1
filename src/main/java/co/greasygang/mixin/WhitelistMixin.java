@@ -1,6 +1,8 @@
 package co.greasygang.mixin;
 
 import java.net.SocketAddress;
+
+import co.greasygang.utils.WhitelistLinkConfig;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.server.PlayerManager;
 import org.spongepowered.asm.mixin.Mixin;
@@ -72,8 +74,8 @@ public class WhitelistMixin {
 			cir.setReturnValue(Text.of("""
                     §6You are not whitelisted on this server!
 
-                    §6Please visit §egreasygang.co §6to gain access to the server.
-                    §6Your code is: §e""" + codeGenerationResponseJson.get("token").getAsString() + """
+                    §6Please visit §e""" + WhitelistLinkConfig.getLoginUrl() + "§6to gain access to the server." +
+					"\n§6Your code is: §e" + codeGenerationResponseJson.get("token").getAsString() + """
 
 
                     §c§lDO NOT SHARE THIS CODE WITH ANYBODY!"""));
