@@ -5,11 +5,13 @@
 	"name": "whitelist-link",
 	"description": "Connects the greasygang.co whitelist to your Minecraft server",
 	"authors": [
-		"veryCrunchy, dargy"
+		"veryCrunchy",
+		"dargy"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"email": "greasygang@verycrunchy.dev",
+		"homepage": "https://greasygang.co",
+		"sources": "https://github.com/Greasy-Projects/"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/whitelist-link/icon.png",
