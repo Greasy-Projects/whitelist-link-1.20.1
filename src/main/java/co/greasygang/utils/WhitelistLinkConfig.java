@@ -67,8 +67,12 @@ public class WhitelistLinkConfig {
         return config.login_url;
     }
 
-    public boolean isEnabled() {
+    public static boolean isEnabled() {
         return config.enabled;
+    }
+
+    public static void toggleEnabled() {
+        config.enabled = !config.enabled;
     }
 
     private static Path getConfigPath() {
