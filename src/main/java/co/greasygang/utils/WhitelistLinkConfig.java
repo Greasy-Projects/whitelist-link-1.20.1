@@ -39,7 +39,7 @@ public class WhitelistLinkConfig {
 
                 configTemplate.enabled = true;
                 configTemplate.login_url = "greasygang.co";
-                configTemplate.api_base = "http://localhost:4000";
+                configTemplate.api_base = "https://greasygang.co";
                 configTemplate.api_key = "";
 
                 writer.write(gson.toJson(configTemplate));
