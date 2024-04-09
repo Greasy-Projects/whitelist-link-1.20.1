@@ -22,8 +22,13 @@ public class WhitelistLink implements ModInitializer {
 			// Reload command
 			dispatcher.register(literal("whitelistlink")
 					.executes(context -> {
+						String adminStatusText = context.getSource().hasPermissionLevel(4) ? String.format(
+								"\n§7WhitelistLink is currently %s.",
+								WhitelistLinkConfig.isEnabled() ? "enabled" : "disabled") : "";
+
 						context.getSource().sendFeedback(() -> Text.literal(
-								"§6WhitelistLink by §eVeryCrunchy §6and §edargy\n§rConnects the greasygang.co whitelist to your Minecraft server"),
+								"§6WhitelistLink by §eVeryCrunchy §6and §edargy\n§rConnects the greasygang.co whitelist to your Minecraft server"
+										+ adminStatusText),
 								false);
 						return 1;
 					})
