@@ -36,6 +36,7 @@ public class WhitelistLink implements ModInitializer {
 								return 1;
 							})))
 					.then((literal("toggle")
+							.requires(source -> source.hasPermissionLevel(4))
 							.executes(context -> {
 								WhitelistLinkConfig.toggleEnabled();
 								String statusMessage = String.format(
