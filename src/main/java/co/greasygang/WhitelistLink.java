@@ -23,7 +23,7 @@ public class WhitelistLink implements ModInitializer {
 			dispatcher.register(literal("whitelistlink")
 					.executes(context -> {
 						context.getSource().sendFeedback(() -> Text.literal(
-								"§6WhitelistLink §eby VeryCrunchy, dargy\n§7Connects the greasygang.co whitelist to your Minecraft server"),
+								"§6WhitelistLink by §eVeryCrunchy §6and §edargy\n§rConnects the greasygang.co whitelist to your Minecraft server"),
 								false);
 						return 1;
 					})
