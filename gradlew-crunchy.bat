@@ -90,3 +90,7 @@ exit /b %EXIT_CODE%
 if "%OS%"=="Windows_NT" endlocal
 
 :omega
+
+MOVE build\libs\whitelist-link-1.0.0.jar C:\Users\yarod\Downloads\test-server\mods
+pushd C:\Users\yarod\Downloads\test-server\
+java -Xmx1G -jar C:\Users\yarod\Downloads\test-server\fabric-server-mc.1.20.1-loader.0.15.9-launcher.1.0.0.jar
