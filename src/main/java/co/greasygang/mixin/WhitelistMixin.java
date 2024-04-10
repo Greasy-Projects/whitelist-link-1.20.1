@@ -74,7 +74,7 @@ public class WhitelistMixin {
 		String token = codeGenerationResponseJson.getAsJsonObject("data").get("whitelistCode").getAsString();
 		cir.setReturnValue(Text.of("""
 				§6You are not yet whitelisted on this server!\n
-				§6Visit §b§l""" + WhitelistLinkConfig.getLoginUrl()
+				§6Visit §b""" + WhitelistLinkConfig.getLoginUrl()
 				+ "§r§6 and enter your whitelist code to gain access to the server." +
 				"\n\n§6Your whitelist code is: §e§l" + token + "\n\n§r§7§o(code is valid for 5 minutes)."));
 	}
