@@ -31,7 +31,7 @@ public class WhitelistMixin {
 		if (!WhitelistLinkConfig.isEnabled())
 			return;
 		String uuid = profile.getId().toString();
-		Text errorMessage = Text.of("§6An error occurred whilst trying to validate your whitelist status.");
+		Text errorMessage = Text.of("§6Could not connect to whitelist server.\nIf this issue persists, please contact §3verycrunchy §6on discord.");
 
 		// Check if the player is whitelisted
 		String whitelistCheckResponse = null;

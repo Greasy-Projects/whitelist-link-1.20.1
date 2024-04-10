@@ -38,8 +38,8 @@ public class WhitelistLinkConfig {
                 Config configTemplate = new Config();
 
                 configTemplate.enabled = true;
-                configTemplate.login_url = "greasygang.co";
-                configTemplate.api_base = "https://greasygang.co";
+                configTemplate.login_url = "greasygang.co/whitelist";
+                configTemplate.api_base = "https://api.greasygang.co";
                 configTemplate.api_key = "";
 
                 writer.write(gson.toJson(configTemplate));
